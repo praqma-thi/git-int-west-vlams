@@ -1,122 +1,113 @@
-# Git på skånska
+# Git int west-vlams
 
-## Introduktion
+## Introdukshe
 
-Det dagliga språket för de olika kommandona i `git` (eller `fubbick`) är
-på skånska ett enda stort skångelskakalas. Jag finner mig själv ofta
-sägandes _"Kan du pusha branchen?"_ eller _"Jag pullar!"_.
+'t Is tid dam kje deftig vlams kunn klapn in nuzn industrie. Da moe gedoan zin
+va te klapn over branchn te pushn en commits ut the checkn. Ti doavoorn dak ier 
+e boeln aliasn en tope gesmeetn dam et dagelijks gebruk va `git` (`kloot`) were 
+wa beter kun doen boegeern in 't plat west-vlams.
 
-Detta dokument ämnar etablera en rent skånsk jargong som kan användas
-på arbetsplatsen för att med fördel undvika pressade situationer.
+## Vervangingn
 
-## Förslag
+Ier ej ne poar tabelln met werkwoordn en substantievn daj in 't doagelijkshe
+gebrukt, me suggesties vo vervaningn int plat west-vlams. Oj betere et, lat me
+weetn, ksmitn ze der geirn bie.
 
-Nedan följer tabeller över verb och substantiv relaterade till git,
-deras nuvarande bruk samt förslag på hur vi tillsammans kan bättra
-oss.
-
-| Verb        | Nuvarande bruk | Förslag       |
+| Werkwoord   | Hudig gebruk   | Vervaning     |
 |-------------|----------------|---------------|
-| init        | inita          | jubba         |
-| clone       | klona          | abekatta      |
-| pull        | pulla          | asa           |
-| push        | pusha          | prega         |
-| fetch       | fetcha         | pela          |
-| branch      | brancha        | spåga         |
-| add         | adda           | åsso          |
-| commit      | commita        | hutta         |
-| rebase      | rebasa         | nimma         |
-| merge       | merga          | klydda        |
-| stash       | stasha         | tocka         |
-| cherry-pick | cherry-picka   | pela päror    |
-| blame       | blamea         | gaffla        |
-| checkout    | checka ut      | henka         |
-| log	      | logga          | härförleden   |
-| revert      | reverta        | sluuda        |
+| init        | initn          | begunt        |
+| clone       | clonen         | kloont        |
+| pull        | pulln          | trekt         |
+| push        | pushn          | duwt          |
+| fetch       | fetchn         | pakt          |
+| switch      | switch         | verandert     |
+| checkout    | utcheckn       |               |
+| branch      | branchn        |               |
+| add         | addn           |               |
+| commit      | commitn        |               |
+| rebase      | rebasen        | versmit       |
+| merge       | mergen         |               |
+| stash       | stashn         |               |
+| cherry-pick | cherry-pickn   |               |
+| blame       | blamen         |               |
+| log	      | loggn          |               |
+| revert      | revertn        | kjerrekewere  |
 
-| Substantiv   | Nuvarande bruk | Förslag     |
-|--------------|----------------|-------------|
-| git          | git            | fubbick     |
-| repository   | repo           | hodda       |
-| branch       | branch         | spåga       |
-| commit       | commit         | drös        |
-| pull request | pull request   | jidder      |
-| stash        | stash          | tocka       |
-| head         | headen         | hue         |
-| remote       | remoten        | ude         |
-| origin       | origin         | himma       |
-| master       | mastern        | kagehus     |
-| dev          | deven          | glytt       |
+| Substantief  | Hudig gebruk   | Vervaning    |
+|--------------|----------------|--------------|
+| git          | git            | kloot        |
+| repository   | repo           |              |
+| branch       | branch         | stok         |
+| commit       | commit         |              |
+| pull request | pull request   |              |
+| stash        | stash          |              |
+| head         | head           | tote         |
+| remote       | remote         |              |
+| origin       | origin         | thuzent      |
+| main         | main           |              |
 
 
-## Exempel
+## Vorbeeldn
 
-    - Kan du asa spågan jag just nimmade och prega den till github?
+    - Trekt me stok ekje en duwtn na GitHub
 
-    - Jag spågade alldeles nyss och hutta ändringarna från min tocka där.
+    - Pakt eerst van thuzent vo daj duwt
 
-    - Skicka en jidder när du är färdig med klyddandet!
+    - Errinnert, oj je stok versmit volgt je tote
 
-    - Låt oss pela päror från kagehus-spågan.
+    - ...
 
-    - Hoppsan, jag råkade visst fedeprega mot kagehuset. D:
-
-    - Jag har en drös på glytt, kan jag klydda in det i kagehuset och sedan prega himm det?
-
-    - Nils! Du kan inte hutta och prega innan du har asat himm från kagehuset! Nu har pågarna fått en rälig klyddkonflikt!
-
-    - Det för mycket klydd härförleden Edvard, du vet att man bara ska nimma där himma ditt ålahue!
-
-## Exempel kommandon
+## Vorbeeld commandos
 
 ```bash
 # git init
-fubbick jubba
+kloot begunt
 
 # git add test.py
-fubbick åsso test.py
+kloot add test.py
 
 # git commit -m "Add new features"
-fubbick hutta -m "Mög"
+kloot commit -m "Nieuwn brol"
 
 # git remote add origin
-fubbick ude åsso himma
+kloot remote add thuzent
 
-# git push origin master
-fubbick prega himma kagehus
+# git push origin main
+kloot duwt thuzent main
+
+# git fetch origin
+kloot pakt thuzent
 
 # git pull origin
-fubbick asa himma
+kloot trekt thuzent
 
-# git merge origin/dev
-fubbick klydda himma/glytt
+# git merge origin/main
+kloot merge thuzent/main
 ```
 
-## Dagligt bruk
+## Doagelijks gebruk
 
-Nedan följer en rad kommandoradskommandon för att sätta upp en skånsk
-gitmiljö. Avsaknaden av skånska tecken i täcknamnen beror på en brist i git
-(överväg att förbättra mjukvaran och skicka en jidder!). Följande
-kommandon ändrar din `~/.gitconfig` och kommer att verka globalt.
+Vo 't gemakkelijkr te moakn ek ier ne boel aliasn daj mor ij `~/.gitconfig` moe
+smitn vor over te schoakeln na de west-vlamshe vervangingn.
 
 ```bash
-git config --global alias.jubba init
-git config --global alias.abekatta clone
-git config --global alias.asa pull
-git config --global alias.prega push
-git config --global alias.fedeprega "push --force"
-git config --global alias.pela fetch
-git config --global alias.spaga branch
-git config --global alias.asso add
-git config --global alias.hutta commit
-git config --global alias.nimma rebase
-git config --global alias.klydda merge
-git config --global alias.tocka stash
-git config --global alias.pelaparor cherry-pick
-git config --global alias.gaffla blame
-git config --global alias.henka checkout
-git config --global alias.härförleden log
+git config --global alias.begunt init
+git config --global alias.kloont clone
+git config --global alias.trekt pull
+git config --global alias.duwt push
+git config --global alias._____ "push --force"
+git config --global alias.pakt fetch
+git config --global alias.verandert switch
+git config --global alias.checkout checkout
+git config --global alias.branch branch
+git config --global alias.add add
+git config --global alias.commit commit
+git config --global alias.versmit rebase
+git config --global alias.merge merge
+git config --global alias.stash stash
+git config --global alias.cherry-pick cherry-pick
+git config --global alias.blame blame
+git config --global alias.log log
 
-alias fubbick=git
+alias kloot=git
 ```
-
