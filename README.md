@@ -7,6 +7,7 @@ va te klapn over branchn te pushn en commits ut the checkn. Ti doavoorn dak ier
 e boeln aliasn en tope gesmeetn dam et dagelijks gebruk va `git` (`kloot`) were 
 wa beter kun doen boegeern in 't plat west-vlams.
 
+
 ## Vervangingn
 
 Ier ej ne poar tabelln met werkwoordn en substantievn daj in 't doagelijkshe
@@ -15,47 +16,56 @@ weetn, ksmitn ze der geirn bie.
 
 | Werkwoord   | Hudig gebruk   | Vervaning     |
 |-------------|----------------|---------------|
-| init        | initn          | begunt        |
-| clone       | clonen         | kloont        |
-| pull        | pulln          | trekt         |
-| push        | pushn          | duwt          |
-| fetch       | fetchn         | pakt          |
-| switch      | switch         | verandert     |
-| checkout    | utcheckn       |               |
-| branch      | branchn        |               |
-| add         | addn           |               |
-| commit      | commitn        |               |
-| rebase      | rebasen        | versmit       |
-| merge       | mergen         |               |
-| stash       | stashn         |               |
-| cherry-pick | cherry-pickn   |               |
-| blame       | blamen         |               |
-| log	      | loggn          |               |
-| revert      | revertn        | kjerrekewere  |
+| init        | init           | begunt        |
+| clone       | clonet         | kloont        |
+| pull        | pullt          | trekt         |
+| push        | pusht          | duwt          |
+| fetch       | fetcht         | oalt          |
+| switch      | switcht        |               |
+| checkout    | checkt ut      | pakt          |
+| branch      | brancht        |               |
+| add         | add            |               |
+| commit      | commit         | ontout        |
+| tag         | tagt           |               |
+| rebase      | rebaset        | versmit       |
+| merge       | merget         |               |
+| stash       | stasht         |               |
+| cherry-pick | cherry-pickt   | muggezift     |
+| blame       | blamet         | beschuldigt   |
+| log	      | logt           | erinnert      |
+| revert      | revert         | kjerrekewere  |
 
 | Substantief  | Hudig gebruk   | Vervaning    |
 |--------------|----------------|--------------|
 | git          | git            | kloot        |
-| repository   | repo           |              |
+| repository   | repo           | oop          |
 | branch       | branch         | stok         |
-| commit       | commit         |              |
+| commit       | commit         | brokke       |
+| tag          | tag            |              |
 | pull request | pull request   |              |
 | stash        | stash          |              |
-| head         | head           | tote         |
-| remote       | remote         |              |
+| head         | head           | kop          |
+| remote       | remote         | elders       |
 | origin       | origin         | thuzent      |
 | main         | main           |              |
 
 
 ## Vorbeeldn
 
-    - Trekt me stok ekje en duwtn na GitHub
+    - Trekt me stok ekje en duwtn na GitHub.
 
-    - Pakt eerst van thuzent vo daj duwt
+    - Oj je stok versmit volgt je kop.
 
-    - Errinnert, oj je stok versmit volgt je tote
+    - Ontout je werk en duwt de brokke na thuzent.
+
+    - Erinnert ekje dam kun zien wukke brokke dam moen muggeziftn.
+
+    - Kloont den oop van elders en beschuldigt kje die latste poar brokkn.
+
+    - Die laste brokke wa nie zuver, kjerrekewere en duwt upnieuw.
 
     - ...
+
 
 ## Vorbeeld commandos
 
@@ -67,16 +77,16 @@ kloot begunt
 kloot add test.py
 
 # git commit -m "Add new features"
-kloot commit -m "Nieuwn brol"
+kloot ontout -m "Nieuwn brol"
 
 # git remote add origin
-kloot remote add thuzent
+kloot elders add thuzent
 
 # git push origin main
 kloot duwt thuzent main
 
 # git fetch origin
-kloot pakt thuzent
+kloot oalt thuzent
 
 # git pull origin
 kloot trekt thuzent
@@ -84,6 +94,7 @@ kloot trekt thuzent
 # git merge origin/main
 kloot merge thuzent/main
 ```
+
 
 ## Doagelijks gebruk
 
@@ -95,19 +106,20 @@ git config --global alias.begunt init
 git config --global alias.kloont clone
 git config --global alias.trekt pull
 git config --global alias.duwt push
-git config --global alias._____ "push --force"
-git config --global alias.pakt fetch
-git config --global alias.verandert switch
-git config --global alias.checkout checkout
+git config --global alias.forceert "push --force"
+git config --global alias.oalt fetch
+git config --global alias.switch switch
+git config --global alias.pakt checkout
 git config --global alias.branch branch
 git config --global alias.add add
-git config --global alias.commit commit
+git config --global alias.ontout commit
 git config --global alias.versmit rebase
 git config --global alias.merge merge
 git config --global alias.stash stash
 git config --global alias.cherry-pick cherry-pick
-git config --global alias.blame blame
-git config --global alias.log log
+git config --global alias.beschuldigt blame
+git config --global alias.erinnert log
+git config --global alias.elders remote
 
 alias kloot=git
 ```
