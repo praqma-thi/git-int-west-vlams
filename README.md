@@ -28,7 +28,7 @@ weetn, ksmitn ze der geirn bie.
 | commit      | commit         | ontout        |
 | tag         | tagt           |               |
 | rebase      | rebaset        | versmit       |
-| merge       | merget         |               |
+| merge       | merget         | mingelt       |
 | stash       | stasht         |               |
 | cherry-pick | cherry-pickt   | muggezift     |
 | blame       | blamet         | beschuldigt   |
@@ -92,7 +92,7 @@ kloot oalt thuzent
 kloot trekt thuzent
 
 # git merge origin/main
-kloot merge thuzent/main
+kloot mingelt thuzent/main
 ```
 
 
@@ -114,7 +114,7 @@ git config --global alias.branch branch
 git config --global alias.add add
 git config --global alias.ontout commit
 git config --global alias.versmit rebase
-git config --global alias.merge merge
+git config --global alias.mingelt merge
 git config --global alias.stash stash
 git config --global alias.cherry-pick cherry-pick
 git config --global alias.beschuldigt blame
